@@ -1,4 +1,4 @@
-//Identifies and Captures the key id of the key clicked
+//Adds and Removes Playing Class and Plays Sound on Click//
 $(".key").click(function () {
     var currentKey = $(this).attr("id");
     $("#" + currentKey).addClass("playing");
@@ -9,7 +9,7 @@ $(".key").click(function () {
     generateSound(currentKey);
 })
 
-
+//Plays Sound and Adds/Removes Playing Class on Keydown//
 document.addEventListener ("keydown", function(event) {
     generateSound(event.key);
     buttonAnimation(event.key);
@@ -19,14 +19,13 @@ document.addEventListener ("keydown", function(event) {
 //Adds and Removes Playing Class on Keydown//
 function buttonAnimation(key){
     var activeButton = $("." + key);
-    
     activeButton.addClass("playing");
     setTimeout(function() {
         activeButton.removeClass("playing");
     }, 100);
 }
 
-
+//Function to Play Sound//
 function generateSound(key) {
     switch (key) {
         case "65":
