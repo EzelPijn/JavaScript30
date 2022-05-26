@@ -9,7 +9,7 @@ function setDate(){
     const seconds = today.getSeconds();
     const secondsDegrees = ((seconds/60)*360)+90;
     secondHand.css("transform", `rotate(${secondsDegrees}deg)`);
-    /*secondHand.style.transform = `rotate(${secondsDegrees}deg)`;*/
+    /*Doesn't work - secondHand.style.transform = `rotate(${secondsDegrees}deg)`;*/
 
 
     const minutes = today.getMinutes();
