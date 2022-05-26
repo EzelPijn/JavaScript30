@@ -40,7 +40,28 @@ html {
   .hand {
     width: 50%;
     height: 6px;
-    background: #820e43;
     position: absolute;
     top: 50%;
+    transform-origin: 100%;
+  }
+
+  .second-hand {
+    background: #0e4382;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.75, 2.46, 0.58, 1)
+  }
+
+  .min-hand {
+    background: #43820e;    
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.51, 0.49, 0.58, 1);
+  }
+
+  .hour-hand {
+    background: #820e43;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.51, 0.49, 0.58, 1);
   }
