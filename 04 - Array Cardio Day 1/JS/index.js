@@ -80,32 +80,23 @@
       // Array.prototype.reduce()
       // 4. How many years did all the inventors live all together?
 
-      /*const inventorsAge = inventors.reduce(getAge);
+      const yearsLived = inventors.reduce(years);
 
-      function getAge(total, item, 0, inventors){
-        return item.passed - item.year;
-
+      function years(a,b){
+        return (a.passed - a.year) - (b.passed - b.year);
       }
-      
-      console.log(inventorsAge);*/
+       
+      console.log(yearsLived);
+
   
       // 5. Sort the inventors by years lived
      const inventorsAge = inventors.sort(age);
 
-      // function age(){
-      //   for (let i = 0; i < inventors.length; i++){
-      //     console.log(inventors[i].passed - inventors[i].year);
-      //   }
-      // }
       function age(a,b){        
         return (a.passed - a.year) - (b.passed - b.year)
       }
+
       console.table(inventorsAge);
-
-      
-      // age(); 
-      // // console.log(inventors.passed);
-
 
   
       // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
@@ -114,8 +105,18 @@
   
       // 7. sort Exercise
       // Sort the people alphabetically by last name
-  
+      const lastName = people.sort();
+      console.table(lastName)
+
+
       // 8. Reduce Exercise
       // Sum up the instances of each of these
       const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+      const count = {};
+
+      data.forEach(element => {
+        count[element]=(count[element] || 0)+1;
+      });
+      console.log(count);
   
