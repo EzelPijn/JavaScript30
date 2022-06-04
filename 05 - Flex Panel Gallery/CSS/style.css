@@ -1,4 +1,35 @@
-html {
+body {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*html {
     box-sizing: border-box;
     background: #ffc600;
     font-family: 'helvetica neue';
@@ -25,8 +56,8 @@ html {
     color: white;
     text-align: center;
     align-items: center;
-    /* Safari transitionend event.propertyName === flex */
-    /* Chrome + FF transitionend event.propertyName === flex-grow */
+    //Safari transitionend event.propertyName === flex 
+    //Chrome + FF transitionend event.propertyName === flex-grow 
     transition:
       font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
       flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
@@ -42,7 +73,7 @@ html {
   .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
   .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
 
-  /* Flex Children */
+  // Flex Children 
   .panel > * {
     margin: 0;
     width: 100%;
@@ -62,4 +93,4 @@ html {
 
   .panel.open {
     font-size: 40px;
-  }
+  }*/
